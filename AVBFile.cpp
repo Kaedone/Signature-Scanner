@@ -119,7 +119,7 @@ bool CAVBFileReader::open(PCSTR FileName)
 
     //Если файл не найден, то создаем его прототип
 
-    if(isFileExist(FileName))
+    if(isFileExists(FileName))
     {
 
         hFile.open(FileName, ios::in | ios::out | ios::binary);
